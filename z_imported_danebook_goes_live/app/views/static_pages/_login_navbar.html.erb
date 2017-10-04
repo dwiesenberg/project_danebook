@@ -1,0 +1,47 @@
+
+
+<!-- navbar containing logo and logins-->
+<!-- THESE ARE COPY-PASTED FROM BOOTSTRAP EXAMPLES -->
+<!-- Static so that it is permanently fixed to the top -->
+
+<!-- notice that this is a ROW as well as a navbar -->
+<nav id = "login-navbar" class = "navbar navbar-default navbar-static-top row">
+    <!-- responsive mobile stuff collapses down  -->
+    <div class="navbar-header col-md-3">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <!--company brand link -->
+      <a class="navbar-brand" id = "brand-link" href="#">Danebook</a>
+    </div>
+    
+    <!-- wraps rest of links to collapse in mobile-->
+    <div class="collapse navbar-collapse col-md-9 navbar-right" >
+    
+    <!-- rows and columns control button placement -->  
+        <form class="navbar-form" role="login" action = "<%= timeline_path %>">
+        <!-- Yes, kids, even a form-group can be a column -->
+          <div class = "col-md-4 col-sm-4 form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+
+          <div class = "col-md-4 col-sm-4 form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+
+          <div class = "col-md-4 col-sm-4 form-group" >
+          <!-- empty label to line up submit button -->
+            <label for="submit">&nbsp;</label><br>
+            <!-- unless you really need it, use basic Bootstrap button styles -->
+            <button type="submit" class="btn btn-info">Login</button>
+          </div>
+        </form>
+        
+    </div><!--navbar-collapse-->
+</nav>
+

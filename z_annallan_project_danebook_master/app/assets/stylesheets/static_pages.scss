@@ -1,0 +1,78 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$header-background: #3b5998;
+$brand-logo: white;
+$default: black;
+
+body {
+  margin: 0;
+}
+.navbar-default {
+  background-color: $header-background;
+  height: 75px;
+  .navbar-header {
+    float: none;
+    h1 {
+      display: inline-block;
+      color: $brand-logo;
+      font-size: 45px;
+      font-family: sans-serif;
+      text-decoration: none;
+      line-height: 34px;
+      vertical-align: middle;
+    }
+    .m {
+      width: 175px;
+      display: inline-block;
+      margin-right: 30px;
+    }
+    label {
+      color: $brand-logo;
+    }
+    button {
+      vertical-align: middle;
+      margin-top: 23px;
+      color: $default;
+      font-weight: bold;
+      box-shadow: 5px 5px 5px $default;
+
+    }
+  }
+}
+
+.home_page {
+  main {
+    margin-top: 100px;
+    line-height: 3;
+    h2 {
+      font-weight: bold;
+    }
+    li {
+      font-size: 16px;
+    }
+  }
+
+  #first {
+    margin-right:  60px;
+  }
+
+  #mail {
+    margin-top: 10px;
+
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .radio {
+    display: inline-block;
+    line-height: normal;
+  }
+
+  .btn-success {
+    width: 457px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px $default;
+  }
+}
