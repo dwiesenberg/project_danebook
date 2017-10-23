@@ -1,0 +1,232 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "shared/variables";
+
+/* UNIVERSAL */
+body{
+	font-family: "Lucida sans";
+	padding-top: 40px;
+}
+
+header {
+	font-family: "Freight sans bold";
+}
+
+hr {
+	padding:0;
+	margin:0;
+}
+
+footer {
+	margin: 20px;
+}
+
+.konami {
+	opacity: 0;
+	background-image:url("http://antiekllc.com/wp-content/uploads/2014/07/cartoon-banana-dancing-5.jpg")
+}
+
+.bkg-fix {
+	background-color:white;
+	// height: 200px;
+	border:1px solid $primary-border-grey;
+	border-radius: 3px;
+}
+
+.grey-title {
+	border: 1px solid $primary-border-grey;
+	background-color: $title-block-grey;
+	height: 40px;
+	text-align: center;
+}
+
+.grey-footer {
+	border: 1px solid $primary-border-grey;
+	background-color: $title-block-grey;
+	height: 100%;
+	padding: 5px 0;
+}
+
+/* HOMEPAGE STYLES */
+.homepage-content-wrapper {
+	margin-bottom: 0;
+	/* MESSAGING STYLES  */
+	.messaging {
+		h2 {
+			padding: 40px 0 24px;
+		}
+	}
+
+	.value-messages {
+		color:#555;
+		ul {
+			list-style-type: none;
+			padding:0 0 30px;
+			li {
+				margin: 10px 0;
+				img {
+					padding: 10px;
+				}
+				#like {
+					height:70px;
+					width:auto;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	/* SIGN UP BLOCK STYLES */
+	.sign-up-block {
+		h2 {
+			font-size:36px;
+		}
+		.for-lawyers {	
+		font-size: 10px;
+		}
+	}
+
+	.sign-up-gender {
+		li{
+			list-style: none;
+			display: inline-block;
+			padding-right: 20px;
+		}
+	}
+
+	.sign-up-btn {
+		box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+	}
+}
+
+/* EDIT ABOUT */
+.edit-profile-box{
+	resize:none;
+}
+
+.information-textarea{
+	height:2em;
+}
+
+/* PHOTOS */
+
+.photos-page {
+	img {
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+
+/* FRIENDS */
+.friend-box{
+	display:inline-flex;
+}
+
+.friends-page-img{
+	width:100px;
+	height:100px;
+	margin: 15px 15px 15px 0;
+}
+
+/* TIMELINE */
+
+.post-input{
+	margin: 20px 0;
+	height: 63px;
+	width: 100%;
+	border: 1px solid $primary-border-grey;
+	word-wrap: break-all;
+	resize:none;
+}
+
+.post-button {
+	margin: 5px;
+	background-color:rgb(83,129,227);
+	color: white;
+}
+
+.post-friend {
+	display:inline-flex;
+	vertical-align: middle;
+}
+
+.post-friend-thumb {
+	width: 60px;
+	height: 60px;
+	overflow:none;
+	padding:5px;
+
+}
+
+.post-friend-info {
+	padding-top: 10px;
+}
+
+.post-text {
+	padding-left:15px;
+	margin: 5px;
+}
+
+.comment-friend-thumb {
+	width:65px;
+	height: auto;
+}
+
+
+.like-or-comment{
+	a{
+		padding-right: 10px;
+	}
+}
+
+.delete-post{
+	a{
+		float:right;
+	}
+}
+
+#cancel {
+	float: left;
+}
+
+/* test tools */
+
+.top-buffer {
+	margin-top: 20px;
+}
+
+.buffer {
+	margin: 15px 0;
+}
+
+.testfill {
+	height: 140px;
+}
+
+
+.testred {
+	background-color:red;
+}
+
+.testblue {
+	background-color:blue;
+
+}
+
+.fill {
+	height:100%
+}
+.fillw{
+	width:100%
+}
+
+
+
+
+
+
+
+

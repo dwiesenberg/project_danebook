@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 user-list">
+      <% @users.each do |user| %>
+        <%= render partial: "user_listing", locals: { user: user } %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-fixed-top main-nav">
+  <%= link_to user_profile_path(current_user), class: "navbar-brand white-nav-text" do %>
+    <%= image_tag("danish_flag.gif", options={}) %>
+    Danebook
+  <% end %>
+  <%= form_tag users_path, method: :get, class: "navbar-form search-bar" do %>
+    <label for="search">Find a user:</label>
+    <%= text_field_tag(
+      :search,
+      params[:search],
+      placeholder: "Type in someone's first name",
+      class: "form-control"
+    ) %>
+  <% end %>
+  <strong><%= link_to "Find Friends", users_path, class: "navbar-text" %></strong>
+  <% if current_user %>
+    <p class="navbar-text navbar-right white-nav-text">
+      <%= link_to current_user.name, current_user %> | <%= link_to "Log out", logout_path %>
+    </p>
+  <% end %>
+</nav>
+<div style="height: 40px;"></div>

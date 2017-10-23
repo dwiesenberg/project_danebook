@@ -1,0 +1,127 @@
+
+<main class="homepage-content-wrapper jumbotron">
+  <div class="container">
+    <section class="messaging-sign-in-row row">
+      <div class="messaging col-lg-offset-1 col-md-6">
+        <header>
+          <h2><strong>Connect with friends</strong></h2>
+        </header>
+
+        <div class="value-messages">
+          <p>
+            <ul>
+              <li>
+                <img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xap1/t39.2365-6/851565_602269956474188_918638970_n.png">
+                <strong>See photos and updates </strong> from friends in News Feed.
+              </li>
+
+              <li>
+                <img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xap1/t39.2365-6/851585_216271631855613_2121533625_n.png">
+                <strong>Share what's new</strong> in your life on your Timeline.
+              </li>
+
+              <li>
+                <img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xap1/t39.2365-6/851558_160351450817973_1678868765_n.png">
+                <strong>Find more</strong> of what you're looking for with Graph Search
+              </li>
+
+              <li>
+                <img id="like" src="http://www.intruo.com/assets/images/fbLike.gif">
+                <strong>Like things</strong> because you're a positive.
+              </li>
+
+            </ul>
+           </p>
+        </div>
+
+      </div>
+      <div class="sign-up-block col-md-5">
+        <header> 
+          <h2><strong>Sign Up</strong></h2>
+          <h4>It's free... sort of.</h4>
+        </header>
+
+        <form class="sign-up-form-group" role="form">
+
+          <div class="sign-up-names row">
+            <div class="sign-up-first-name col-md-6 form-group" >
+              <input type="text" class="input-md form-control" id="sign-up-name-1" placeholder="First name">
+            </div>
+
+            <div class="sign-up-last-name col-md-6 form-group" >
+              <input type="text" class="input-md form-control" id="sign-up-name-2" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="sign-up-email form-group">
+
+            <input type="email" class="input-md form-control" id="sign-up-email-1" placeholder="Email">
+          </div>
+          <div class="sign-up-email form-group">
+
+            <input type="email" class="input-md form-control" id="sign-up-email-2" placeholder="Re-enter email">
+          </div>
+
+          <div class="sign-up-pwd form-group">
+
+            <input type="password" class="input-md form-control" id="exampleInputPassword1" placeholder="New password">
+          </div>
+
+          <div class="sign-up-birthday">
+
+            <h4>Birthday</h4>
+
+            <div class="birthday-dates form-group">
+              <select class="month-dropdown-select btn btn-lg btn-default">
+                <option>Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+              </select>
+
+              <select class="day-dropdown-select btn btn-lg btn-default">
+                <option>Day</option>
+                <%= 1.upto(31) do |day|%>
+                <%= raw("<option>#{day}</option>") %>
+                <% end %>
+              </select>
+
+              <select class="year-dropdown-select btn btn-lg btn-default">
+                <option value="" selected>Year</option>
+               <!--<option value="20x6">20x6</option> -->
+                <%= 2014.downto(1900) do |yr| %>
+                   <%=raw("<option value='#{yr}'>#{yr}</option>") %>
+                <% end %>
+              </select>
+            </div>
+          </div>
+
+          <div class="sign-up-gender lg">
+            <h4>
+              <li><input type="radio" name="gender"> Male</li>
+              <li><input type="radio" name="gender"> Female</li>
+            </h4>
+          </div>
+
+          <p class="for-lawyers col-lg-8">By clicking sign-up you agree that we can and will use all of your data without pause or consideration of your privacy.</p>
+
+          <button class="sign-up-btn btn btn-success btn-lg col-sm-5 col-xs-12">
+            Sign Up!
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+  </div>
+</main>

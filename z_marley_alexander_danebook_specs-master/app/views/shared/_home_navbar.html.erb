@@ -1,0 +1,14 @@
+<%= form_tag session_path, method: "post", id: "sign-in-bar", class: "sign-in-wrapper navbar-form navbar-right" do %>
+
+	<%= label_tag :email, "Email or Phone" %>
+	<%= text_field_tag :email, nil, {class: "navbar-email", placeholder: "Email"} %>
+
+	<%= label_tag :password, "Password"%>
+	<%= password_field_tag :password, nil, {class: "navbar-password", placeholder: "Password"} %>
+
+  <%= label_tag :remember_me, "Remember me" %>
+  <%= check_box_tag :remember_me %>
+
+  <%= submit_tag "Log in", class: "sign-in-btn" %>
+<% end %>
+

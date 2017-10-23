@@ -1,0 +1,6 @@
+(function() {
+  var $parentPostComments = $('.post[data-id=<%= @post.id %>] .comments');
+  $("<%= j( render partial: 'show', locals: { comment: @comment }) %>").hide().appendTo($parentPostComments).slideDown();
+  console.log($parentPostComments)
+  $parentPostComments.siblings('.new_comment').find('input.form-control').val('');
+})();

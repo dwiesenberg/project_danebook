@@ -1,0 +1,8 @@
+development:
+  AWS_HOST_NAME: us-west-2.amazonaws.com
+  AWS_REGION: us-west-2
+  S3_BUCKET_NAME: jamesharris-danebook
+  AWS_ACCESS_KEY_ID: [redacted]
+  AWS_SECRET_KEY_ID: [redacted]
+
+  

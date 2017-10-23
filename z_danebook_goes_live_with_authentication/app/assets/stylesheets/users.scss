@@ -1,0 +1,24 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .user-listing {
+    width: 250px;
+    text-align: center;
+    margin: 15px;
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 10px 25px;
+      border: 1px solid silver;
+      background-size: cover;
+    }
+
+    .name {
+      display: block;
+      font-weight: bold;
+      margin: .25em;
+    }
+  }
+}

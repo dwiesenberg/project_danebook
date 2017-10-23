@@ -1,0 +1,20 @@
+
+<%= render "shared/cover_section" %>
+<section class="col-sm-12 bkg-fix buffer" role="photos">
+  <div class="row grey-title">
+    <h4>Photos</h4>
+  </div>
+  
+  <div class="photos-page col-sm-12">
+    <% 4.times do %>
+    <div class="row buffer">
+      <% 4.times do %>
+      <div class="col-sm-3">
+        <%= image_tag("icon_photo_small.png", :class => "img-thumbnail", :alt => "photo on the photo page", :title => "Photo") %>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div> <!-- /photos-body -->
+  
+</section> <!-- /PHOTOS -->

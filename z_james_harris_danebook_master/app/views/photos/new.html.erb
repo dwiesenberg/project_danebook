@@ -1,0 +1,7 @@
+<div class="text-center">
+  <p>Select a photo from your hard drive:</p>
+  <%= form_for [@user, @photo] do |f| %>
+    <%= f.file_field :image, class: "center-block" %>
+    <%= f.submit %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+(function() {
+  var likableType = '<%= @likable_class %>';
+  var likableId = '<%= @likable.id %>';
+  var $likable = $('.'+likableType+'[data-id='+likableId+']');
+  var $likableLink = $likable.find('a.'+likableType+'-like');
+  var $likes = $likable.find('.'+likableType+'-likes');
+  $likableLink.text("Like");
+  $likableLink.attr('href', '<%= send("#{@likable_class}_like_path".to_sym, @likable) %>');
+  $likes.html('<%= j(render partial: "likes/index", locals: { likes: @likable.likes }) %>')
+})();

@@ -1,0 +1,7 @@
+<% if current_user == user %>
+  <!-- No button; can't befriend yourself -->
+<% elsif current_user.friended_users.include? user %>
+  <%= button_to "Remove friend", user_unfriend_path(user), class: "btn btn-default friend-btn", method: :get %>
+<% else %>
+  <%= button_to "Add user as friend", user_friend_path(user), class: "btn btn-default friend-btn", method: :get %>
+<% end %>

@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 # original ruby version in gem
 # ruby '2.1.4'
 ruby '2.2.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -37,6 +38,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bcrypt', '~> 3.1.7'
   gem 'faker'
   gem 'hirb'
 
@@ -44,6 +46,7 @@ group :development do
   gem "binding_of_caller"
   gem "jazz_fingers"
 end
+
 
 # Use ActiveModel has_secure_password
   gem 'bcrypt', '~> 3.1.7'

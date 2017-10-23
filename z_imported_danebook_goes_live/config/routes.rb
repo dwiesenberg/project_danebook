@@ -1,22 +1,13 @@
 Rails.application.routes.draw do
 
-  resources :users
-  root 'users#index'
-  
-  resource  :session, :only => [:new, :create, :destroy]
-  get 'login' => 'sessions#new'
-  delete 'logout' => 'sessions#destroy'
-
-  #From previous project ... comment out for now to give priority to sign in project:
   # root 'static_pages#home'
+  root 'static_pages#about'
 
-  # get '/timeline' => 'static_pages#timeline'
-  # get '/friends' => 'static_pages#friends'
-  # get '/photos' => 'static_pages#photos'
-  # get '/about' => 'static_pages#about'
-  # get '/about_edit' => 'static_pages#about_edit'
-
-  # ##############################################
+  get '/timeline' => 'static_pages#timeline'
+  get '/friends' => 'static_pages#friends'
+  get '/photos' => 'static_pages#photos'
+  get '/about' => 'static_pages#about'
+  get '/about_edit' => 'static_pages#about_edit'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

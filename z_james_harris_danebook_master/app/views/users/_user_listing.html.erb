@@ -1,0 +1,5 @@
+<div class="user-listing">
+  <div class="photo" style="background-image: url(<%= image_path user.profile.photo.expiring_url %>)"></div>
+  <%= link_to user.name, user_path(user), class: "name" %>
+  <%= render partial: "shared/friend_or_unfriend_button", locals: { user: user } %>
+</div>
